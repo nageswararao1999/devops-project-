@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Update package cache
+      apt:  # Replace with yum or apk if not using Ubuntu/Debian
+        update_cache: yes
+
+    - name: Install required packages
+      apt:  # Replace with yum or apk if not using Ubuntu/Debian
+        name:
+          - docker.io
+          - git
+          - openjdk-8-jdk
+        state: present
