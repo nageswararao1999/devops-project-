@@ -2,14 +2,44 @@
 - hosts: all
   become: true
   tasks:
-    - name: Update package cache
-      apt:  # Replace with yum or apk if not using Ubuntu/Debian
-        update_cache: yes
-
     - name: Install required packages
-      apt:  # Replace with yum or apk if not using Ubuntu/Debian
+      yum:
         name:
-          - docker.io
+          - docker
           - git
-          - openjdk-8-jdk
+          - java-1.8.0-amazon-corretto
         state: present
+
+    - name: Start Docker
+      service:
+        name: docker
+        state: started
+        enabled: true
+
+    - name: Install Jenkins
+      shell: |
+        wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+        rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+        yum install -y jenkins
+      notify: restart jenkins
+
+    - name: Start Jenkins
+      service:
+        name: jenkins
+        state: started
+        enabled: true
+
+    - name: Install Grafana
+      shell: |
+        yum install -y https://dl.grafana.com/oss/release/grafana-8.5.0-1.x86_64.rpm
+      notify: restart grafana
+
+  handlers:
+    - name: restart jenkins
+      service:
+        name: jenkins
+        state: restarted
+    - name: restart grafana
+      service:
+        name: grafana-server
+        state: restarted

@@ -1,0 +1,14 @@
+---
+- name: Basic Ansible Playbook
+  hosts: myhosts
+  become: true  # Enables privilege escalation
+  tasks:
+    - name: Ensure Nginx is installed
+      yum:
+        name: nginx
+        state: present
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
+

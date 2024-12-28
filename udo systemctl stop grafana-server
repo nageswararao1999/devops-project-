@@ -1,0 +1,20 @@
+[0;1;32m●[0m grafana-server.service - Grafana instance
+     Loaded: loaded (/lib/systemd/system/grafana-server.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2024-12-24 17:57:23 CST; 4s ago
+       Docs: http://docs.grafana.org
+   Main PID: 113777 (grafana)
+      Tasks: 21 (limit: 19007)
+     Memory: 205.8M
+     CGroup: /system.slice/grafana-server.service
+             └─113777 /usr/share/grafana/bin/grafana server --config=/etc/grafana/grafana.ini --pidfile=/run/grafana/grafana-server.pid --packaging=deb cfg:default.paths.logs=/var/log/grafana cfg:default.paths.data=/var/lib/grafana cfg:default.paths.plugins=/var/lib/grafana/plugins cfg:default.paths.provisioning=/etc/grafana/provisioning
+
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=ticker t=2024-12-24T17:57:23.531372976-06:00 level=info msg=starting first_tick=2024-12-24T17:57:30-06:00
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=http.server t=2024-12-24T17:57:23.539615114-06:00 level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=secret.migration t=2024-12-24T17:57:23.543500069-06:00 level=error msg="Server lock for secret migration already exists"
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=provisioning.dashboard t=2024-12-24T17:57:23.545562582-06:00 level=info msg="starting to provision dashboards"
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=provisioning.dashboard t=2024-12-24T17:57:23.545805717-06:00 level=info msg="finished to provision dashboards"
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=plugins.update.checker t=2024-12-24T17:57:23.658468915-06:00 level=info msg="Update check succeeded" duration=131.184373ms
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=grafana-apiserver t=2024-12-24T17:57:23.677888931-06:00 level=info msg="Adding GroupVersion playlist.grafana.app v0alpha1 to ResourceManager"
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=grafana-apiserver t=2024-12-24T17:57:23.678118584-06:00 level=info msg="Adding GroupVersion featuretoggle.grafana.app v0alpha1 to ResourceManager"
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=grafana-apiserver t=2024-12-24T17:57:23.678687896-06:00 level=info msg="Adding GroupVersion iam.grafana.app v0alpha1 to ResourceManager"
+Dec 24 17:57:23 BLACKANGEL grafana[113777]: logger=grafana.update.checker t=2024-12-24T17:57:23.690858039-06:00 level=info msg="Update check succeeded" duration=164.089986ms

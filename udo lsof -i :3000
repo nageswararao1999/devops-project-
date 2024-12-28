@@ -1,0 +1,50 @@
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=settings t=2024-12-24T17:54:48.754562726-06:00 level=info msg="Path Plugins" path=/var/lib/grafana/plugins
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=settings t=2024-12-24T17:54:48.754565236-06:00 level=info msg="Path Provisioning" path=/etc/grafana/provisioning
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=settings t=2024-12-24T17:54:48.754567902-06:00 level=info msg="App mode production"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=featuremgmt t=2024-12-24T17:54:48.754747558-06:00 level=info msg=FeatureToggles cloudWatchRoundUpEndTime=true dashboardScene=true lokiStructuredMetadata=true dashgpt=true publicDashboardsScene=true exploreMetrics=true alertingNoDataErrorExecution=true promQLScope=true accessControlOnCall=true kubernetesPlaylists=true pinNavItems=true lokiQuerySplitting=true lokiQueryHints=true prometheusAzureOverrideAudience=true dashboardSceneForViewers=true influxdbBackendMigration=true groupToNestedTableTransformation=true autoMigrateXYChartPanel=true ssoSettingsApi=true prometheusConfigOverhaulAuth=true transformationsVariableSupport=true alertingInsights=true addFieldFromCalculationStatFunctions=true dashboardSceneSolo=true lokiMetricDataplane=true logsInfiniteScrolling=true panelMonitoring=true logsContextDatasourceUi=true prometheusMetricEncyclopedia=true managedPluginsInstall=true angularDeprecationUI=true openSearchBackendFlowEnabled=true topnav=true formatString=true recoveryThreshold=true alertingSimplifiedRouting=true recordedQueriesMulti=true tlsMemcached=true correlations=true cloudWatchCrossAccountQuerying=true logsExploreTableVisualisation=true notificationBanner=true awsAsyncQueryCaching=true logRowsPopoverMenu=true nestedFolders=true annotationPermissionUpdate=true transformationsRedesign=true publicDashboards=true cloudWatchNewLabelParsing=true dataplaneFrontendFallback=true
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=sqlstore t=2024-12-24T17:54:48.754782718-06:00 level=info msg="Connecting to DB" dbtype=sqlite3
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=migrator t=2024-12-24T17:54:48.757868278-06:00 level=info msg="Locking database"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=migrator t=2024-12-24T17:54:48.757889179-06:00 level=info msg="Starting DB migrations"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=migrator t=2024-12-24T17:54:48.764424786-06:00 level=info msg="migrations completed" performed=0 skipped=611 duration=268.265µs
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=migrator t=2024-12-24T17:54:48.764687638-06:00 level=info msg="Unlocking database"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=secrets t=2024-12-24T17:54:48.765117151-06:00 level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=plugin.angulardetectorsprovider.dynamic t=2024-12-24T17:54:48.784451722-06:00 level=info msg="Restored cache from database" duration=259.584µs
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=plugin.store t=2024-12-24T17:54:48.784969988-06:00 level=info msg="Loading plugins..."
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=plugins.registration t=2024-12-24T17:54:48.79419012-06:00 level=error msg="Could not register plugin" pluginId=xychart error="plugin xychart is already registered"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=plugins.initialization t=2024-12-24T17:54:48.794216386-06:00 level=error msg="Could not initialize plugin" pluginId=xychart error="plugin xychart is already registered"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=plugins.registration t=2024-12-24T17:54:48.808517887-06:00 level=info msg="Plugin registered" pluginId=grafana-lokiexplore-app
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=plugin.store t=2024-12-24T17:54:48.808555434-06:00 level=info msg="Plugins loaded" count=55 duration=23.585871ms
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=query_data t=2024-12-24T17:54:48.810654019-06:00 level=info msg="Query Service initialization"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=live.push_http t=2024-12-24T17:54:48.812701829-06:00 level=info msg="Live Push Gateway initialization"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ngalert.notifier.alertmanager org=1 t=2024-12-24T17:54:48.814161021-06:00 level=info msg="Applying new configuration to Alertmanager" configHash=d2c56faca6af2a5772ff4253222f7386
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ngalert.state.manager t=2024-12-24T17:54:48.815776284-06:00 level=info msg="Running in alternative execution of Error/NoData mode"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=infra.usagestats.collector t=2024-12-24T17:54:48.816694535-06:00 level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=server t=2024-12-24T17:54:48.816736586-06:00 level=info msg="Writing PID file" path=/run/grafana/grafana-server.pid pid=112225
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=provisioning.alerting t=2024-12-24T17:54:48.817235835-06:00 level=info msg="starting to provision alerting"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=provisioning.alerting t=2024-12-24T17:54:48.817259741-06:00 level=info msg="finished to provision alerting"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=secret.migration t=2024-12-24T17:54:48.817652928-06:00 level=error msg="Server lock for secret migration already exists"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=grafanaStorageLogger t=2024-12-24T17:54:48.817719888-06:00 level=info msg="Storage starting"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ngalert.state.manager t=2024-12-24T17:54:48.818108068-06:00 level=info msg="Warming state cache for startup"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ngalert.state.manager t=2024-12-24T17:54:48.818231797-06:00 level=info msg="State cache has been initialized" states=0 duration=123.15µs
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ngalert.multiorg.alertmanager t=2024-12-24T17:54:48.818247672-06:00 level=info msg="Starting MultiOrg Alertmanager"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ngalert.scheduler t=2024-12-24T17:54:48.818256849-06:00 level=info msg="Starting scheduler" tickInterval=10s maxAttempts=1
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ticker t=2024-12-24T17:54:48.818272164-06:00 level=info msg=starting first_tick=2024-12-24T17:54:50-06:00
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=provisioning.dashboard t=2024-12-24T17:54:48.818559787-06:00 level=info msg="starting to provision dashboards"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=provisioning.dashboard t=2024-12-24T17:54:48.818568148-06:00 level=info msg="finished to provision dashboards"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=server t=2024-12-24T17:54:48.819339007-06:00 level=error msg="Stopped background service" service=*api.HTTPServer reason="failed to open listener on address 0.0.0.0:3000: listen tcp 0.0.0.0:3000: bind: address already in use"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=ticker t=2024-12-24T17:54:48.819373656-06:00 level=info msg=stopped last_tick=2024-12-24T17:54:40-06:00
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=tracing t=2024-12-24T17:54:48.819445132-06:00 level=info msg="Closing tracing"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=grafana.update.checker t=2024-12-24T17:54:48.819482605-06:00 level=error msg="Update check failed" error="failed to get stable version from grafana.com: Get \"https://grafana.com/api/grafana/versions/stable\": *api.HTTPServer run error: failed to open listener on address 0.0.0.0:3000: listen tcp 0.0.0.0:3000: bind: address already in use" duration=1.201648ms
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=serviceaccounts t=2024-12-24T17:54:48.821664325-06:00 level=warn msg="Failed to get usage metrics" error="context canceled"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=grafana-apiserver t=2024-12-24T17:54:48.954769076-06:00 level=info msg="Adding GroupVersion playlist.grafana.app v0alpha1 to ResourceManager"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=grafana-apiserver t=2024-12-24T17:54:48.955041756-06:00 level=info msg="Adding GroupVersion featuretoggle.grafana.app v0alpha1 to ResourceManager"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=grafana-apiserver t=2024-12-24T17:54:48.955783673-06:00 level=info msg="Adding GroupVersion iam.grafana.app v0alpha1 to ResourceManager"
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: Error: ✗ *api.HTTPServer run error: failed to open listener on address 0.0.0.0:3000: listen tcp 0.0.0.0:3000: bind: address already in use
+Dec 24 17:54:48 BLACKANGEL grafana[112225]: logger=grafana-apiserver t=2024-12-24T17:54:48.960002446-06:00 level=info msg="StorageObjectCountTracker pruner is exiting"
+Dec 24 17:54:48 BLACKANGEL systemd[1]: [0;1;39m[0;1;31m[0;1;39mgrafana-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Dec 24 17:54:48 BLACKANGEL systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgrafana-server.service: Failed with result 'exit-code'.[0m
+Dec 24 17:54:49 BLACKANGEL systemd[1]: grafana-server.service: Scheduled restart job, restart counter is at 6.
+Dec 24 17:54:49 BLACKANGEL systemd[1]: Stopped Grafana instance.
+Dec 24 17:54:49 BLACKANGEL systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgrafana-server.service: Start request repeated too quickly.[0m
+Dec 24 17:54:49 BLACKANGEL systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgrafana-server.service: Failed with result 'exit-code'.[0m
+Dec 24 17:54:49 BLACKANGEL systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Grafana instance.[0m
